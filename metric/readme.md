@@ -17,7 +17,7 @@
 
 
 ### streaming_mean.py
-> [reference](https://www.tensorflow.org/api_guides/python/contrib.metrics)
+> [tf.contrib.metrics](https://www.tensorflow.org/api_guides/python/contrib.metrics)
 * Steps：
     1. Initialization: initializing the metric state.
         ```
@@ -33,14 +33,14 @@
         ```
 
 ### streaming_accuracy.py
-> [reference](https://www.tensorflow.org/api_guides/python/contrib.metrics)
+> [tf.contrib.metrics](https://www.tensorflow.org/api_guides/python/contrib.metrics)
  * 计算准确率
  * 计算[MAE](https://en.wikipedia.org/wiki/Mean_absolute_error)
  * 用scope解决相同 metric 度量多个不同输入冲突的问题
 
 
 ### tf_accuracy.py
-> [reference](https://www.tensorflow.org/api_docs/python/tf/metrics)
+> [tf.metrics](https://www.tensorflow.org/api_docs/python/tf/metrics)
  * 计算准确率
 
 
@@ -52,8 +52,10 @@
 
 ### tf_confusion_matrix.py
 > paper [An introduction to ROC analysis](An%20introduction%20to%20ROC%20analysis.pdf)
- * 分类结果混淆矩阵
+ * 分类结果混淆矩阵    
+ 
  ![分类结果混淆矩阵](confusion_matrix.jpg)
+
 
 ### tf_mean.py
  * 均值相关

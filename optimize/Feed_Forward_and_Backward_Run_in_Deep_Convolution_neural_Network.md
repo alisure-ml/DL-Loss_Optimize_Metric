@@ -125,12 +125,12 @@ First two indices are indicate the spatial coordinates and last index is indicat
     * 用(H,W,C)表示输入image的维度，用(K1,K2,C)表示kernel的维度，
     用(m,n,c)表示空间坐标和所属通道
 * If a kernel is slided over the color image, the multidimensional tensor convolution
-operation:
+operation:  
     ![convolution multidimensional](ffabridcnn/convolution_multidimensional.jpg)
-* For grey scale image,convolution process:
+* For grey scale image,convolution process:  
     ![convolution grey scale image](ffabridcnn/convolution_grey_scale_image.jpg)
-* The feature maps of the convolution layer can be computed by:
-    * 将下面公式中的求和部分换成上面的公式也许会好理解！
+* The feature maps of the convolution layer can be computed by:  
+    * 将下面公式中的求和部分换成上面的公式也许会好理解！  
     ![convolution layer for compute feature map](ffabridcnn/convolution_layer_compute_feature_map.jpg)
 * These feature maps are passed through a non-linear activation function σ.
 * Pooling layer is developed by taking out the maximum valued pixels m,n in the convolution layers.

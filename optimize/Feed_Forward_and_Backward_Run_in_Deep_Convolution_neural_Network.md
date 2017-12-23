@@ -62,14 +62,14 @@ Relu和Sigmoid激活函数(activation function)作为卷积网络的非线性属
     * As a result feature maps are produced which are stacked together to form the convolution layers.
         * 将产生的特征图堆叠在一起形成卷积层。
     
-    * The dimension of the convolution layer can be computed by following Eqn. 2.1:
+    * The dimension of the convolution layer can be computed by following Eqn. 2.1:  
         ![Eq. 2.1](ffabridcnn/dcnn_2_1.jpg)
 
 2. 激活层 Activation functions
     * “激活函数”定义了给定“一组输入”的神经元的输出
     * 通过“激活函数”将“网络输入值的线性加权和”进行“非线性转换”
     * 传统的激活函数是基于条件概率的，输出值为0或者1
-    * Higher the net input value greater the activation.
+    * Higher the net input value greater the activation.  
     
     ![activation function](ffabridcnn/activation_function.jpg)
 
@@ -94,27 +94,27 @@ Relu和Sigmoid激活函数(activation function)作为卷积网络的非线性属
     * Many types of loss functions are developed for various applications.
     * 均方误差 Mean Squared Error
         * known as quadratic loss function(二次损失), mostly used in linear regression
-        models to measure the performance.
+        models to measure the performance.  
         ![mean squared error](ffabridcnn/mean_squared_error.jpg)
     * 均方Log误差 Mean Squared Logarithmic Error
-        * MSLE
+        * MSLE  
         ![mean squared logarithmic error](ffabridcnn/mean_squared_logarithmic_error.jpg)
     * L2损失 L2 Loss function
         * L2 loss function is "square root of L2 norm" of the difference between actual
-        labeled value and computed value from the net input.
+        labeled value and computed value from the net input.  
         ![L2 loss function](ffabridcnn/L2_loss_function.jpg)
     * L1损失 L1 Loss function
         * L1 loss function is "sum of absolute errors" of the difference between actual labeled
-        value and computed value from the net input.
+        value and computed value from the net input.  
         ![L1 loss function](ffabridcnn/L1_loss_function.jpg)
     * 平均绝对误差 Mean Absolute Error
-        * MAE
+        * MAE  
         ![Mean Absolute Error](ffabridcnn/mean_absolute_error.jpg)
     * 平均绝对百分比误差 Mean Absolute Percentage Error
-        * MAPE
+        * MAPE  
         ![Mean Absolute Percentage Error](ffabridcnn/mean_absolute_percentage_error.jpg)
     * 交叉熵 Cross Entropy
-        * The most commonly used loss function is Cross Entropy loss function.
+        * The most commonly used loss function is Cross Entropy loss function.  
         ![Cross Entropy](ffabridcnn/cross_entropy.jpg)
 
 
@@ -136,9 +136,9 @@ operation:
 * Pooling layer is developed by taking out the maximum valued pixels m,n in the convolution layers.
 * The pooling layer is concatenated to form a long vector with the length of p x q and is 
 fed into fully connected dense layers for the classification. The long vector is fed into a 
-fully connected dense layers from L layer to L+1.
+fully connected dense layers from L layer to L+1.  
     ![fully connected dense layer](ffabridcnn/fully_conneced_dense_layer.jpg)
-* The performance of the model can be computed by loss function, such as:
+* The performance of the model can be computed by loss function, such as:  
     ![loss function compute performance](ffabridcnn/loss_function_compute_performance.jpg)
 
 
